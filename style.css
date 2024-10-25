@@ -1,78 +1,53 @@
-* {
+
+*{
+    background-color:#609be7; 
+    margin-top: 60px;
+    margin-left: 70px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Trebuchet MS', Arial, sans-serif;
-    font-size: 18px;
-    background-color: #f4f4f4;
-    background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    color: #333;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.cabecalho {
-    background-color: rgba(0, 0, 0, 0.7); 
-    padding: 15px;
-    border-radius: 10px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-align: center;
-}
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    color: #ffffff;
-    margin-right: 50px; 
-}
-
-.menu {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
 }
 
-.menu-esquerda {
+button {
+    padding: 17px 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color:white;
+    box-shadow: #0000000d 0 0 8px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    transition: all .5s ease;       
+}
+
+.button-container {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.menu ul {
-    display:flex;
-    list-style: none;
-    gap: 180px; 
+button:hover {
+    letter-spacing: 3px;
+    background-color:hsl(221, 91%, 64%);
+    color: #fff; 
+    box-shadow: #287ceb 0px 7px 29px 0px; 
 }
+ 
 
-.menu li {
-    margin: 0;
-    font-size: larger;
+button:active {
+    letter-spacing: 3px;
+    background-color: #327ef1; 
+    color: #fff; 
+    box-shadow: #346ce4 0px 0px 0px 0px; 
+    transform: translateY(10px); 
+    transition: 100ms;
 }
-
-.menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition: background-color 0.3s ease;
-    border-radius: 5px; /* Deixa as bordas arredondadas */
-}
-
-.menu a:hover {
-    background-color: #feb47b;
-    color: #333;
-}
-
-.logo {
-    border-right: 2px solid rgba(255, 255, 255, 0.5);
-    padding-right: 20px;
-}
-
-
 
